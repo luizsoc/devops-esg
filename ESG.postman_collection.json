@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "506c1da9-2049-415b-8cbd-4247787483fb",
+		"name": "ESG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45164685"
+	},
+	"item": [
+		{
+			"name": "api/iniciativas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/iniciativas",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"iniciativas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "api/iniciativas",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/iniciativas",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"iniciativas"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\r\n  \"titulo\": \"Instalar painéis solares na matriz\",\r\n  \"categoria\": \"AMBIENTAL\",\r\n  \"responsavel\": \"gabriel\",\r\n  \"metaReducaoCo2\": 1500.75,\r\n  \"status\": \"PLANEJADA\"\r\n}"
+				}
+			]
+		},
+		{
+			"name": "api/iniciativas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/iniciativas",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"iniciativas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/iniciativas/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/iniciativas/{id}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"iniciativas",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/iniciativas/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/iniciativas/{id}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"iniciativas",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/iniciativas/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/iniciativas/{id}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"iniciativas",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
