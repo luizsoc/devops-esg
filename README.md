@@ -3,22 +3,21 @@
 Aplicação desenvolvida com Spring Boot com foco em demonstrar práticas de DevOps, incluindo containerização com Docker e pipeline de CI/CD com GitHub Actions.
 
 🐳 Como executar localmente com Docker
-Pré-requisitos
-Docker instalado
-Docker Compose instalado
-🔧 Passo a passo
-Clone o repositório:
-git clone https://github.com/SEU-USUARIO/SEU-REPO.git
-cd iniciativas-esg
-Crie o arquivo .env:
-SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle:1521/FREEPDB1
-SPRING_DATASOURCE_USERNAME=appuser
-SPRING_DATASOURCE_PASSWORD=apppass
-SPRING_PROFILES_ACTIVE=dev
-Suba os containers:
-docker compose up --build
-Acesse a aplicação:
-http://localhost:8080
+
+Pré-requisitos: 
+- Docker instalado
+- Docker Compose instalado
+
+🔧 Passo a passo:
+- Clone o repositório: git clone https://github.com/SEU-USUARIO/SEU-REPO.git
+- cd iniciativas-esg
+- Crie o arquivo .env: SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle:1521/FREEPDB1
+- SPRING_DATASOURCE_USERNAME=appuser
+- SPRING_DATASOURCE_PASSWORD=apppass
+- SPRING_PROFILES_ACTIVE=dev
+- Suba os containers: docker compose up --build
+- Acesse a aplicação: http://localhost:8080
+
 🔄 Pipeline CI/CD
 
 O projeto utiliza GitHub Actions para automação de integração e deploy contínuo.
