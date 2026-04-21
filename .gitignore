@@ -1,10 +1,30 @@
+### Documentação ###
 HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### STS ###
+### Java & Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.restore
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/wrapper/maven-wrapper.jar
+.cache/
+
+### Variáveis de Ambiente (CRÍTICO) ###
+# Ignora o arquivo com senhas reais, mas mantém o exemplo
+.env
+
+### Docker ###
+.docker/
+
+### IDEs (IntelliJ, STS, VS Code) ###
+.idea/
+*.iws
+*.iml
+*.ipr
 .apt_generated
 .classpath
 .factorypath
@@ -12,12 +32,12 @@ target/
 .settings
 .springBeans
 .sts4-cache
+.vscode/
+bin/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+### Sistema Operacional ###
+Thumbs.db
+.DS_Store
 
 ### NetBeans ###
 /nbproject/private/
@@ -26,8 +46,3 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
