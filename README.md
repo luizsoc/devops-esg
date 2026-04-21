@@ -9,7 +9,7 @@ Pré-requisitos:
 - Docker Compose instalado
 
 🔧 Passo a passo:
-- Clone o repositório: git clone https://github.com/SEU-USUARIO/SEU-REPO.git
+- Clone o repositório: git clone https://github.com/luizsoc/devops-esg
 - cd iniciativas-esg
 - Crie o arquivo .env: SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle:1521/FREEPDB1
 - SPRING_DATASOURCE_USERNAME=appuser
