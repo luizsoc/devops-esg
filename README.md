@@ -1,14 +1,14 @@
-🚀 Projeto - Iniciativa ESG
+Projeto - Iniciativa ESG
 
 Aplicação desenvolvida com Spring Boot com foco em demonstrar práticas de DevOps, incluindo containerização com Docker e pipeline de CI/CD com GitHub Actions.
 
-🐳 Como executar localmente com Docker
+Como executar localmente com Docker
 
 Pré-requisitos: 
 - Docker instalado
 - Docker Compose instalado
 
-🔧 Passo a passo:
+Passo a passo:
 - Clone o repositório: git clone https://github.com/luizsoc/devops-esg
 - cd iniciativas-esg
 - Crie o arquivo .env: SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle:1521/FREEPDB1
@@ -18,7 +18,7 @@ Pré-requisitos:
 - Suba os containers: docker compose up --build
 - Acesse a aplicação: http://localhost:8080
 
-🔄 Pipeline CI/CD
+Pipeline CI/CD
 
 O projeto utiliza GitHub Actions para automação de integração e deploy contínuo.
 
@@ -32,7 +32,7 @@ Execução de testes com JUnit:
 ✔ Build da imagem Docker
 Criação da imagem da aplicação:
 docker build -t crud-oracle-app .
-🚀 Deploy automatizado
+Deploy automatizado
 
 O deploy é controlado por branches:
 
@@ -41,11 +41,11 @@ staging	Staging
 main	Produção
 Push em staging → deploy em ambiente de homologação
 Push em main → deploy em produção
-📦 Containerização
+Containerização
 
 A aplicação foi containerizada utilizando Docker com estratégia de multi-stage build.
 
-🐳 Dockerfile
+Dockerfile
 # Build com Maven
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
@@ -61,7 +61,7 @@ COPY --from=build /app/target/crud-oracle-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
-🧩 Docker Compose
+Docker Compose
 Orquestração entre aplicação e banco Oracle
 Uso de:
 Volumes → persistência de dados
